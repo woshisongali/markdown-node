@@ -4,7 +4,12 @@ const router = new Router()
 const MarkDownFile = require('./mardownFile.js')
 async function concatTemplet (ctx, next) {
   let mainHTMl = await MarkDownFile.toHTML(ctx)
-  await ctx.render('template.html',{arr:[1,3,8], mainHtml: mainHTMl})
+  let asidHTML = await MarkDownFile.toHTML('/mdsource/_aside.md')
+  await ctx.render('template.html',{
+    arr:[1,3,8], 
+    mainHtml: mainHTMl,
+    asidHTML: asidHTML
+  })
   // return mainHTMl
 }
 

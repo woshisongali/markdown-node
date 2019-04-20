@@ -23,14 +23,20 @@ function readFileMD (path) {
 
 async function toHTML (ctx) {
   let html
+  let mdpath
   // let html = markdwon.toHTML('Hello *world*')
   let baseUrl = path.resolve(__dirname)
   let urlToArr = baseUrl.split('\/')
   urlToArr.pop()
   baseUrl = urlToArr.join('/')
-  let orginMdPath = ctx.path ? ctx.path.replace(/pages/, 'mdsource') : ''
-  console.log('look this' + orginMdPath)
-  let mdpath = './server/test.md'
+  if (typeof ctx === 'string') {
+    mdpath = `${baseUrl}${ctx}`
+  } else {
+    let orginMdPath = ctx.path ? ctx.path.replace(/pages/, 'mdsource') : ''
+    // console.log('look this' + orginMdPath)
+    // let mdpath = './server/test.md'
+    mdpath = `${baseUrl}${orginMdPath}`
+  }
   html = await readFileMD(mdpath)
   return html
 }
