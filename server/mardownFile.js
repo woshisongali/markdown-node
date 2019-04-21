@@ -21,6 +21,8 @@ const md = new MarkdwonIt({
 })
 
 const linkCreateId = function (md, params) {
+  
+  // 对形如- [this指向情况](/pages/base/this.md?#id=true)  的link标签扩展id
   md.inline.ruler.before('link', 'link_addid', function replace(state) {
     let src = state.src
     if (~src.indexOf('#id=true')) {
@@ -34,7 +36,24 @@ const linkCreateId = function (md, params) {
     }
     // console.log(state)
   })
+
+  // 给内容主题页扩展id
+  md.block.ruler.after('hr', 'hr_addid', function replace (state) {
+    if (state.tokens.length > 0) {
+      state.tokens.forEach(function (value, index) {
+        let isFormate = false
+        if (value.type === 'heading_open') {
+          isFormate = true
+        }
+        if (isFormate) {
+          let attrData = ['id', state.tokens[index + 1].content]
+          value.attrPush(attrData)
+        }
+      })
+    }
+  })
 }
+
 md
   .use(linkCreateId, 'to createsfddd')
 
