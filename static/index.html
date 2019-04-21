@@ -10,5 +10,15 @@
   <p>this is some text</p>
   <script src="./markdown.js"></script>
   <script src="./jquery-1.9.0.min.js"></script>
+  <script>
+    function testReg () {
+      let reg = /^\[(.+)\]/
+      // let reg = /http\:/
+      let url = '[gdsfdffsf](http://werrrdd.sffdd)'
+      let result = url.match(reg)
+      console.log(result)
+    }
+    testReg()
+  </script>
 </body>
 </html>

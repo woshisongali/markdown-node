@@ -23,8 +23,9 @@ router.get('/', async (ctx, next) => {
 .get('/pages/:item', async (ctx, next) => {
   await concatTemplet(ctx, next)
 })
-.get('/pages/:item/:subitem', (ctx, next) => {
-  ctx.body = 'the sub item '
+.get('/pages/:item/:subitem', async (ctx, next) => {
+  // ctx.body = 'the sub item '
+  await concatTemplet(ctx, next)
 })
 .get('/mdsource', (ctx, next) => {
   ctx.body = 'the md srouce'

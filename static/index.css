@@ -1,0 +1,13 @@
+body {
+}
+.main-aside {
+  position: fixed;
+  width: 300px;
+  top: 0px;
+  left: 0px;
+}
+.main-box {
+  margin-left: 300px;
+  padding-left:80px;
+  padding-right: 100px;
+}
