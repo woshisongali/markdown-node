@@ -1,15 +1,29 @@
-## markdown实现页面预览
+## 使用者
+
 ### 启动命令
 npm run start
 
-### 目录查看
+### 入口页面
+http://127.0.0.1:3000/pages/index.md
+
+### 添加文件
+在mdsource文件夹下进行md文件的添加 ， 然后在 _aside.md中添加链接
+
+
+
+## 开发者
+### markdown实现页面预览
+#### 启动命令
+npm run start
+
+#### 目录查看
 
 二级目录类似http://127.0.0.1:3000/pages/sss
 
 三级目录类似 http://127.0.0.1:3000/pages/assff/gdds
 
 
-### 实现
+#### 实现
 采用markdown-it实现md的转换工作
 koa-views实现模板语法  基于ejs
 
