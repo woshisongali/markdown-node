@@ -11,3 +11,14 @@ body {
   padding-left:80px;
   padding-right: 100px;
 }
+.deal-mark {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.main-aside a {
+  color: #353535;
+}
+.main-aside .active a {
+  color: #075DB3;
+}
