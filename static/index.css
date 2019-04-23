@@ -8,7 +8,7 @@ body {
 }
 .main-box {
   margin-left: 300px;
-  padding-left:80px;
+  padding-left:40px;
   padding-right: 100px;
 }
 .deal-mark {
@@ -21,4 +21,7 @@ body {
 }
 .main-aside .active a {
   color: #075DB3;
+}
+.main-box img {
+  max-width: 100%;
 }

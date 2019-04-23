@@ -1,3 +1,5 @@
+
+
 function getQueryString(urlSearch, name) { 
   if (!urlSearch) { return null }
   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
@@ -9,7 +11,18 @@ var page = {
   init () {
     console.log('start')
     this.bindEvent()
+    this.linkBlank()
   },
+
+  linkBlank () {
+    let links = $('.main-box a')
+    console.log(links.length)
+    links.each(function () {
+      console.log('look linke')
+      $(this).attr('target', '_blank')
+    })
+  },
+
   bindEvent () {
    
     function createTitle () {
@@ -22,7 +35,7 @@ var page = {
       // const eles = $('h4')
       console.log(eles.length)
       for (let i = 0, len = eles.length; i < len; i++) {
-        str += '- [/' + eles[i].innerHTML + '](' + formatUrl + '?#id=true)' + '\n'
+        str += '- [' + eles[i].innerHTML + '](/' + formatUrl + '?#id=true)' + '\n'
       }
       console.log(str)
     }
