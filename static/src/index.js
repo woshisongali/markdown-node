@@ -12,6 +12,7 @@ var page = {
     console.log('start')
     this.bindEvent()
     this.linkBlank()
+    this.asideScroll()
   },
 
   linkBlank () {
@@ -23,8 +24,25 @@ var page = {
     })
   },
 
+  asideScroll () {
+    let url = window.location.href
+    let formatUrl = url.split('\/').slice(3).join('\/')
+    if (!formatUrl) { return }
+    let linkele = $('a[href="/' + formatUrl +'"]')
+    if (linkele.length === 0) {
+      return
+    }
+    // let top = linkele.offset().top
+    linkele.parent().addClass('active')
+    let scrollTop = localStorage.getItem("asideTop") || 0
+    $('.main-aside').scrollTop(scrollTop)
+  },
+  restoreAsideTop () {
+    let scrollTop = $('.main-aside').scrollTop()
+    localStorage.setItem("asideTop", scrollTop)
+  },
   bindEvent () {
-   
+    let self = this
     function createTitle () {
       let str = ''
       let url = window.location.href.split('#')[0]
@@ -51,6 +69,7 @@ var page = {
     })
 
     $('.main-aside').on('click', function (e) {
+      self.restoreAsideTop()
       let target = e.target || e.srcElement
       let url
       if (target.tagName.toLowerCase() === 'a') {
@@ -61,12 +80,17 @@ var page = {
       }
       let id = getQueryString(url.split('?')[1], 'id')
       let titlele = $('#' + id)
+      if (titlele.length === 0) {
+        titlele = $(document.getElementById(id))
+      }
+      if (titlele.length === 0) { return}
       let top = titlele.offset().top
       document.documentElement.scrollTop = top 
       document.body.scrollTop = top
       $('.main-aside li').removeClass('active')
-      console.log($(this).parent())
+      // console.log($(this).parent())
       $(target).parent().addClass('active')
+      
     })
   }
 }

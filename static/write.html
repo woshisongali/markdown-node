@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>to write something</title>
+</head>
+<body>
+  <p>the content</p>
+
+  <script>
+    function discount (rules, money) {
+      let sortRules = rules.sort(function (a, b) {return a.price - b.price})
+      let i = 0
+      let len = sortRules.length
+      while ((i <  len) && (money >= sortRules[i].price)) {
+        i++
+      }
+      if (i > 0) {
+        return money - rules[i-1].discount
+      } else {
+        return money
+      }
+    }
+    let rules = [
+      {price: 10, discount: 2},
+      {price: 15, discount: 3},
+      {price: 20, discount: 5}
+    ]
+    console.log(discount(rules, 9))
+    console.log(discount(rules, 13))
+    console.log(discount(rules, 20))
+  </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 
 - css样式
-  - [css样式的一些问题](/pages/css.md)
+  - [css样式的问题](/pages/css.md)
     - [css样式的一些问题](/pages/css.md?#id=true)
     - [垂直居中](/pages/css.md?#id=true)
     - [关于BFC](/pages/css.md?#id=true)
@@ -15,7 +15,7 @@
     - [this指向情况](/pages/base/this.md?#id=true)
 
 - 性能
-  - [页面流程优化](/pages/performance.md)
+  - [页面优化](/pages/performance.md)
     - [页面流程优化](/pages/performance.md?#id=true)
     - [流程图节点](/pages/performance.md?#id=true)
     - [请求数量的减小](/pages/performance.md?#id=true)
@@ -25,5 +25,15 @@
     - [js交互触发页面的渲染](/pages/performance.md?#id=true)
     - [WebWorker](/pages/performance.md?#id=true)
 
+- 手写code
+  - [some手写code](/pages/handcode.md)
+    - [手写code](/pages/handcode.md?#id=true)
+    - [throttle](/pages/handcode.md?#id=true)
+    - [debounce](/pages/handcode.md?#id=true)
+    - [实现object.createpollyfill](/pages/handcode.md?#id=true)
+    - [实现repeat](/pages/handcode.md?#id=true)
+    - [js实现随机数组](/pages/handcode.md?#id=true)
+    - [优惠金额算法的实现](/pages/handcode.md?#id=true)      
+
 - 附加项
-  - [图谱](/pages/tupu.md)  
+  - [图谱](/pages/tupu.md?#id=true)  

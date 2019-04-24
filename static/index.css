@@ -3,8 +3,10 @@ body {
 .main-aside {
   position: fixed;
   width: 300px;
+  height: 100%;
   top: 0px;
   left: 0px;
+  overflow: scroll;
 }
 .main-box {
   margin-left: 300px;
@@ -19,7 +21,7 @@ body {
 .main-aside a {
   color: #353535;
 }
-.main-aside .active a {
+.main-aside .active > a {
   color: #075DB3;
 }
 .main-box img {
