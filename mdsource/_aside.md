@@ -13,6 +13,11 @@
     - [变量提升问题](/pages/base/this.md?#id=true)
     - [闭包](/pages/base/this.md?#id=true)
     - [this指向情况](/pages/base/this.md?#id=true)
+  - [存储](/pages/store.md)
+    - [存储信息](/pages/store.md?#id=true)
+    - [cookie和session](/pages/store.md?#id=true)
+    - [WebStorage](/pages/store.md?#id=true)
+    - [WebStorage的优点](/pages/store.md?#id=true)
 
 - 性能
   - [页面优化](/pages/performance.md)

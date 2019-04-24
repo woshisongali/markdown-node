@@ -27,3 +27,9 @@ body {
 .main-box img {
   max-width: 100%;
 }
+code {
+  color: #c7254e;
+}
+pre code {
+  color: inherit;
+}

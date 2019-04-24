@@ -37,10 +37,12 @@ var page = {
     let scrollTop = localStorage.getItem("asideTop") || 0
     $('.main-aside').scrollTop(scrollTop)
   },
+
   restoreAsideTop () {
     let scrollTop = $('.main-aside').scrollTop()
     localStorage.setItem("asideTop", scrollTop)
   },
+
   bindEvent () {
     let self = this
     function createTitle () {
@@ -57,6 +59,7 @@ var page = {
       }
       console.log(str)
     }
+    
     $('#dealMarkDown').on('click', function (e) {
       let target = e.target || e.srcElement
       var operatstr = target.getAttribute('data-opera')
