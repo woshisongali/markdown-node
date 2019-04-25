@@ -6,6 +6,7 @@
     - [关于BFC](/pages/css.md?#id=true)
     - [css3多行布局](/pages/css.md?#id=true)
     - [三列布局方案](/pages/css.md?#id=true)
+
 - js基础
   - [this作用域](/pages/base/this.md)
     - [关于this](/pages/base/this.md?#id=true)
@@ -13,11 +14,19 @@
     - [变量提升问题](/pages/base/this.md?#id=true)
     - [闭包](/pages/base/this.md?#id=true)
     - [this指向情况](/pages/base/this.md?#id=true)
+    - [原型链解释](/pages/base/this.md??#id=true)
+    - [new一个对象的过程](/pages/base/this.md??#id=true)
   - [存储](/pages/store.md)
     - [存储信息](/pages/store.md?#id=true)
     - [cookie和session](/pages/store.md?#id=true)
     - [WebStorage](/pages/store.md?#id=true)
     - [WebStorage的优点](/pages/store.md?#id=true)
+  - [其他](/pages/base/other.md)
+    - [另外一些](/pages/base/other.md?#id=true)
+    - [jsonp原理](/pages/base/other.md?#id=true)
+    - [跨域请求](/pages/base/other.md?#id=true)
+    - [移动端适配](/pages/base/other.md?#id=true)
+    - [promise](/pages/base/other.md?#id=true)
 
 - 性能
   - [页面优化](/pages/performance.md)
@@ -48,6 +57,18 @@
     - [DOM事件机制](/pages/browsercore.md?#id=true)
     - [影子(Shadow)DOM](/pages/browsercore.md?#id=true)
     - [asycn和deffer](/pages/browsercore.md?#id=true)
+
+- 常见算法
+  - [基础常见](/pages/algorithm.md)
+    - [一些算法问题](/pages/algorithm.md?#id=true)
+    - [快速排序](/pages/algorithm.md?#id=true)
+    - [数组去重](/pages/algorithm.md?#id=true)
+    - [洗牌算法](/pages/algorithm.md?#id=true)
+    - [寻找第k大的数](/pages/algorithm.md?#id=true)
+    - [斐波那契数](/pages/algorithm.md??#id=true)
+- 基础插件原理
+
+- http协议
 
 - 附加项
   - [图谱](/pages/tupu.md?#id=true)  
