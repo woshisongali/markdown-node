@@ -40,5 +40,14 @@
     - [js实现随机数组](/pages/handcode.md?#id=true)
     - [优惠金额算法的实现](/pages/handcode.md?#id=true)      
 
+- 浏览器内核
+  - [内核信息](/pages/browsercore.md)
+    - [浏览器内核](/pages/browsercore.md?#id=true)
+    - [浏览器线程及关系](/pages/browsercore.md?#id=true)
+    - [HTML解释器和DOM模型](/pages/browsercore.md?#id=true)
+    - [DOM事件机制](/pages/browsercore.md?#id=true)
+    - [影子(Shadow)DOM](/pages/browsercore.md?#id=true)
+    - [asycn和deffer](/pages/browsercore.md?#id=true)
+
 - 附加项
   - [图谱](/pages/tupu.md?#id=true)  
