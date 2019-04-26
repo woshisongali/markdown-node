@@ -29,6 +29,10 @@
     - [跨域请求](/pages/base/other.md?#id=true)
     - [移动端适配](/pages/base/other.md?#id=true)
     - [promise](/pages/base/other.md?#id=true)
+    - [高阶函数](/pages/base/other.md??#id=true)
+    - [偏函数](/pages/base/other.md??#id=true)
+    - [函数克里化](/pages/base/other.md??#id=true)
+    - [纯函数](/pages/base/other.md??#id=true)
 
 - 性能
   - [页面优化](/pages/performance.md)
