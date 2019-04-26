@@ -6,6 +6,8 @@
     - [关于BFC](/pages/css.md?#id=true)
     - [css3多行布局](/pages/css.md?#id=true)
     - [三列布局方案](/pages/css.md?#id=true)
+    - [动画问题](/pages/css.md??#id=true)
+    - [rem和em的区别](/pages/css.md??#id=true)
 
 - js基础
   - [this作用域](/pages/base/this.md)
@@ -69,6 +71,26 @@
 - 基础插件原理
 
 - http协议
+  - [http](/pages/http.md)
+    - [http协议](/pages/http.md?#id=true)
+    - [get与post](/pages/http.md?#id=true)
+    - [http与https](/pages/http.md?#id=true)
+    - [xss](/pages/http.md?#id=true)
+    - [csrf及防攻击](/pages/http.md?#id=true)
+    - [状态码](/pages/http.md?#id=true)
+    - [代理](/pages/http.md?#id=true)
 
+- 主观性问题
+    - [主观问题](/pages/subjectivity.md?#id=true)
+    - [你为什么要离职](/pages/subjectivity.md?#id=true)
+    - [你做过的值得骄傲的项目](/pages/subjectivity.md?#id=true)
+    - [为什么要选用某个框架](/pages/subjectivity.md?#id=true)
+    - [通过什么途径学习](/pages/subjectivity.md?#id=true)
+    - [最近看的一本书](/pages/subjectivity.md?#id=true)
+    - [项目从开发到上线的流程描述](/pages/subjectivity.md?#id=true)
+    - [项目把控及延期问题](/pages/subjectivity.md?#id=true)
+    - [怎样看待加班现象](/pages/subjectivity.md?#id=true)
+    - [对自己的规划](/pages/subjectivity.md?#id=true)
+    - [带领团队促进队员成长](/pages/subjectivity.md?#id=true)
 - 附加项
   - [图谱](/pages/tupu.md?#id=true)  
