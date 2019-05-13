@@ -1,5 +1,9 @@
 ## 使用者
 
+### node版本号
+node采用8.16.0 可使用nvm进行版本号控制[nvm安装路径](https://github.com/nvm-sh/nvm)
+#### supervisor安装
+npm install supervisor -g
 ### 启动命令
 npm run start
 

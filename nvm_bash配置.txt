@@ -1,0 +1,10 @@
+export PATH=$PATH:/usr/local/mysql/bin
+
+
+export NVM_DIR=~/.nvm
+export PATH=$PATH:$NVM_DIR
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+
+在进行环境变量配置时bash_profile文件需要重新运行一下命令如下
+ source .bash_profile
